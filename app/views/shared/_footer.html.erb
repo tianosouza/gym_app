@@ -1,110 +1,68 @@
-<footer class="relative w-full mb-0 mt-2 border-t-2">
+<footer class="bg-white relative w-full mb-0 mt-1 border-t-2">
   <div class="w-full mt-4 px-8 mx-auto max-w-7xl">
-    <div class="grid justify-between grid-cols-1 gap-4 md:grid-cols-1">
-      <div class="grid justify-between grid-cols-4 gap-4">
-        <ul>
-          <p class="block mb-1 text-base font-semibold  text-slate-800">
-            Exercises
-          </p>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-             
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <p class="block mb-1 text-base font-semibold text-slate-800">
-            Workouts Plan
-          </p>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-700 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <p class="block mb-1 text-base font-semibold text-slate-800">
-            API Exercises
-          </p>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-          
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <p class="block mb-1 text-base font-semibold text-slate-800">
-            About Us
-          </p>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
-              
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-slate-200 md:flex-row md:justify-between">
+    <% if user_signed_in? %>
+      <div class="grid justify-between grid-cols-1 gap-4 md:grid-cols-1">
+        <div class="grid justify-between grid-cols-4 gap-4">
+          <ul>
+            <p class="block mb-1 text-base font-semibold  text-slate-800">
+              Help and Suport
+            </p>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                Contact us
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+              Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                Terms of Service
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <p class="block mb-1 text-base font-semibold text-slate-800">
+              Resources
+            </p>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                Exercises
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                Workouts
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                News
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <p class="block mb-1 text-base font-semibold text-slate-800">
+              API Exercises
+            </p>
+            <li>
+              <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                Docs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>      
+    <% end %>
+      
+    <div class="flex flex-col items-center justify-center w-full py-4 border-t border-slate-200 md:flex-row md:justify-between">
       <p class="block mb-4 text-sm text-center text-slate-500 md:mb-0">
         Copyright © 2024 
         <a href="#">Cristiano Souza</a>. All
