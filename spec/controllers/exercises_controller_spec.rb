@@ -44,4 +44,42 @@ RSpec.describe ExercisesController, type: :controller do
       end
     end
   end
+
+  describe "PUT #update" do
+    let(:exercise) { create(:exercise, user: user) }
+
+    context "with valid params" do
+      let(:new_attributes) { { name: "New name" } }
+
+      it "updates the requested exercise" do
+        put :update, params: { user_id: user.id, id: exercise.id, exercise: new_attributes }
+        exercise.reload
+        expect(exercise.name).to eq("New name")
+      end
+
+      it "renders a JSON response with the exercise" do
+        request.headers["Accept"] = "application/json"
+        put :update, params: { user_id: user.id, id: exercise.id, exercise: new_attributes }
+        expect(response).to have_http_status(:ok)
+        expect(response.location).to eq(exercise_url(exercise))
+      end
+    end
+
+    context "with invalid params" do
+      it "renders a JSON response with errors for the exercise" do
+        put :update, params: { user_id: user.id, id: exercise.id, exercise: attributes_for(:exercise, name: nil) }
+        expect(response).to have_http_status(:unprocessable_entity)
+      end
+    end
+  end
+
+  describe "DELETE #destroy" do
+    let!(:exercise) { create(:exercise, user: user) }
+
+    it "destroys the requested exercise" do
+      expect {
+        delete :destroy, params: { user_id: user.id, id: exercise.id }
+      }.to change(Exercise, :count).by(-1)
+    end
+  end
 end
