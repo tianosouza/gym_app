@@ -1,0 +1,4 @@
+<div class="flex items-center h-auto" data-controller="dark-mode">
+  <%= image_tag("dark.svg", height: '28px', width: '28px', id: 'dark-theme', class: "cursor-pointer toggle-image hidden font-bold w-6 text-center", data: { action: 'click->dark-mode#toggle' }) %>
+  <%= image_tag("light.svg", height: '28px', width: '28px', id: 'light-theme', class: "cursor-pointer toggle-image font-bold w-6 text-center", data: { action: 'click->dark-mode#toggle' }) %>
+</div>
