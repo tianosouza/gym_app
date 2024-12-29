@@ -1,0 +1,13 @@
+<div id="toasts" class="fixed top-14 right-0 z-50 p-4" data-controller="toast">
+  <% if model.errors.any? %>
+    <div id="error_explanation" class="flex flex-col bg-red-500 border-l-4 border-red-700 py-2 px-3 shadow-md mb-2">
+      <h2><strong class="font-bold"><%= pluralize(model.errors.count, "error") %> prohibited this <%= model.model_name.human.downcase %> from being saved:</strong></h2>
+
+      <ul class="flex flex-col mt-2">
+        <% model.errors.each do |error| %>
+          <li class="block sm:inline"><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
