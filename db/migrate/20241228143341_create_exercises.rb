@@ -6,7 +6,7 @@ class CreateExercises < ActiveRecord::Migration[8.0]
       t.string :exercise_type
       t.boolean :is_favorite, default: false
       t.string :num_exercise
-      # t.references :user, null: false, foreign_key: true
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
