@@ -16,6 +16,10 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
+gem "jwt", "~> 2.10"
+gem "active_model_serializers", "~> 0.10.15"
+gem "rack-cors", "~> 2.0"
+gem "bcrypt", "~> 3.1"
 
 group :development, :test do
   gem "dotenv-rails", "~> 3.1", ">= 3.1.4"
@@ -25,7 +29,6 @@ group :development, :test do
   gem "shoulda-matchers", "~> 6.4"
   gem "factory_bot_rails", "~> 6.4", ">= 6.4.3"
   gem "rubocop-rails-omakase", require: false
-  gem "foreman", "~> 0.88.1"
   gem "faker", "~> 3.5"
 end
 
