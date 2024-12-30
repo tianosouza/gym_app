@@ -16,7 +16,6 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
-gem "devise", "~> 4.9"
 
 group :development, :test do
   gem "dotenv-rails", "~> 3.1", ">= 3.1.4"
