@@ -16,9 +16,10 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
-gem "jwt", "~> 2.10"
+gem "kaminari", "~> 1.2"
 gem "active_model_serializers", "~> 0.10.15"
 gem "rack-cors", "~> 2.0"
+gem "jwt", "~> 2.10"
 gem "bcrypt", "~> 3.1"
 
 group :development, :test do
