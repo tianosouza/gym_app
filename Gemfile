@@ -30,7 +30,6 @@ group :development, :test do
   gem "shoulda-matchers", "~> 6.4"
   gem "factory_bot_rails", "~> 6.4", ">= 6.4.3"
   gem "rubocop-rails-omakase", require: false
-  gem "foreman", "~> 0.88.1"
   gem "faker", "~> 3.5"
 end
 
