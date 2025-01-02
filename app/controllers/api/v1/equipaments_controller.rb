@@ -1,4 +1,4 @@
-class EquipamentsController < ApplicationController
+class Api::V1::EquipamentsController < ActionController::API
   before_action :set_equipament, only: %i[ show edit update destroy ]
 
   # GET /equipaments or /equipaments.json
